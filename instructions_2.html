@@ -26,18 +26,25 @@
           <h1 class="display-5 fw-bold text-body-emphasis">Overview</h1>
           <p class="lead mb-2">
             You are a purchaser of goods in an online marketplace that consists of three different vendors.
-            The goods sold by each vendor are exactly the same.<br><br>
+            The goods sold by each vendor are exactly the same. There are ten rounds in total, and you are required
+            to make one purchase in each round. <br><br>
+            The vendors are unchanged in each round. However, their average rating is updated for their performance in the previous round.<br><br>
             Due to delivery issues in the market, orders sometimes arrive in bad condition. 
-            If the order arrives in bad condition you will be paid £0. Whereas, you are paid £1 for orders that arrive 
-            in good condition.<br><br>
-            Vendors are real people who are paid for the number of sales they make that arrive in good condition.<br><br> 
+            If the order arrives in bad condition it will be rated 1<img src="./assets/images/star.svg" alt="star" height="20px">. 
+            Whereas,  orders that arrive in good condition are rated as 5<img src="./assets/images/star.svg" alt="star" height="20px">. 
+            Each 5<img src="./assets/images/star.svg" alt="star" height="20px"> purchase is valued at £1, and each 
+            1<img src="./assets/images/star.svg" alt="star" height="20px"> is valued at £0. <br><br>
             Each vendor is randomly allocated a type, Good and Bad. Products arrive in good condition from Good vendors
             more often than from Bad vendors. However, at times, products arrive in bad condition from 
             both types of vendor.<br><br>
-            Finally, given delivery is, outside the control of the vendors, if a product arrives in 
+            Given delivery is, outside the control of the vendors, if a product arrives in 
             good condition in one round, it does not mean it will arrive in good condition in the following 
             round, and vice versa.
             <br><br>
+          </p>
+          <p class="lead mb-2" id="remuneration-msg">
+            Message<br><br>
+          </p>
 
     </section>
 
@@ -87,5 +94,6 @@
         </div>
       </div>
     </section>
+    <script src="instructions_2.js"></script>
 </body>
 </html>
