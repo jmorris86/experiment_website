@@ -4,8 +4,8 @@ let experResults = {};
 let vendorNumber = "";
 const vendorTypes = ["good", "bad"]
 const reviewProb = {
-    "good":[.8, .2],
-    "goodNotChosen": [.65, .35],
+    "good":[.7, .3],
+    "goodNotChosen": [.6, .4],
     "bad": [.5, .5]
 };
 const btnA = document.getElementById("btn-buyA");
