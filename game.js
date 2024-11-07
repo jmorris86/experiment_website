@@ -20,7 +20,7 @@ let span = document.getElementsByClassName("close")[0];
 const marketRoundNumber = document.querySelector("#market-round-num");
 const paymentMessage = document.querySelector("#payment-message")
 
-class purchaser{
+class Purchaser{
     constructor(id) {
         this.id = id;
         this.choices = [];
@@ -36,7 +36,7 @@ class purchaser{
 
 /* The results of the experiment are random, but known to the experimentor 
 ex ante. All permutations are captured in the possible results object*/
-class vendor{
+class Vendor{
     constructor(name, race, picture, identity) {
     this.name = name;
     this.race = race;
@@ -51,10 +51,10 @@ class vendor{
     }
 }
 
-const purchaserA = new purchaser();
-const vendor1 = new vendor("James", "mixed", "./assets/images/headshot.jpg", vendorTypes[0]);
-const vendor2 = new vendor("Kobe", "black", "./assets/images/kobe.jpg", vendorTypes[1]);
-const vendor3 = new vendor("Frida", "Latina", "./assets/images/frida.jpg", vendorTypes[0]);
+const purchaserA = new Purchaser();
+const vendor1 = new Vendor("Mark", "mixed", "./assets/images/headshot.jpg", vendorTypes[0]);
+const vendor2 = new Vendor("Peter", "white", "./assets/images/white_1.jpg", vendorTypes[1]);
+const vendor3 = new Vendor("Paul", "white", "./assets/images/white_2.jpg", vendorTypes[0]);
 console.log(vendor1);
 console.log(vendor2);
 console.log(vendor3);
